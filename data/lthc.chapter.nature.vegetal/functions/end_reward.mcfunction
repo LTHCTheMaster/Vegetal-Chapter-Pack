@@ -1,0 +1,1 @@
+give @s barrel{display:{Name:'{"text":"Vegetal","color":"dark_red","bold":true,"italic":false,"underlined":true}'},BlockEntityTag:{Items:[{Slot:0b,id:"minecraft:potato",Count:64b},{Slot:8b,id:"minecraft:bread",Count:64b},{Slot:18b,id:"minecraft:bread",Count:64b},{Slot:26b,id:"minecraft:potato",Count:64b}]}} 1

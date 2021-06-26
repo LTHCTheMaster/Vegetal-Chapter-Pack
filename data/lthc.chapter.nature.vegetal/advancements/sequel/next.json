@@ -1,0 +1,46 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:bread"
+      },
+      "title": "Light brown food",
+      "description": "Get a stack of bread for a really cool reward",
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": false,
+      "hidden": false
+    },
+    "parent": "lthc.chapter.nature.vegetal:sequel/start",
+    "criteria": {
+      "unlock": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "player": {
+                  "advancements": {
+                    "lthc.chapter.nature.vegetal:sequel/start": true
+                  }
+                }
+              }
+            }
+          ],
+          "items": [
+            {
+              "items": [
+                "minecraft:bread"
+              ],
+              "count": 64
+            }
+          ]
+        }
+      }
+    },
+    "rewards": {
+      "experience": 500,
+      "function": "lthc.chapter.nature.vegetal:next_reward"
+    }
+  }

@@ -1,0 +1,46 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:hay_block"
+      },
+      "title": "A Fish Party",
+      "description": "Get a stack of hay block for a big reward",
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": false,
+      "hidden": false
+    },
+    "parent": "lthc.chapter.nature.vegetal:sequel/next",
+    "criteria": {
+      "unlock": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "player": {
+                  "advancements": {
+                    "lthc.chapter.nature.vegetal:sequel/next": true
+                  }
+                }
+              }
+            }
+          ],
+          "items": [
+            {
+              "items": [
+                "minecraft:hay_block"
+              ],
+              "count": 64
+            }
+          ]
+        }
+      }
+    },
+    "rewards": {
+      "experience": 750,
+      "function": "lthc.chapter.nature.vegetal:end_reward"
+    }
+  }
