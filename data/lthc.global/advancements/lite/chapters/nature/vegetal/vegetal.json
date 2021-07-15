@@ -3,8 +3,8 @@
         "icon": {
             "item": "minecraft:potato"
         },
-        "title": "Vegetal Chapter Pack",
-        "description": "1.0 version",
+        "title": "Vegetal",
+        "description": "1.0.1 version",
         "show_toast": false,
         "announce_to_chat": false,
         "hidden": false
